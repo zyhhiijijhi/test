@@ -1,0 +1,10 @@
+CFLAG= -Wall -g
+all : ex1
+
+ex1: ex1.c
+	gcc $(CFLAG) -o ex1 $<
+
+.PHONY:clean
+
+clean:
+	-rm  ex1
